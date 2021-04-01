@@ -11,12 +11,18 @@ TIMEZONE = 'America/Sao_Paulo'
 
 DEFAULT_LANG = 'pt'
 
+# Article summary length on main index page
+SUMMARY_MAX_LENGTH = 100
+DEFAULT_PAGINATION = 10
+GITHUB_URL = 'https://github.com/RonaldTheodoro/ronaldtheodoro.github.io'
+
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
+RSS_FEED_SUMMARY_ONLY = True
 
 # Blogroll
 LINKS = (('Pelican', 'https://getpelican.com/'),
@@ -25,10 +31,14 @@ LINKS = (('Pelican', 'https://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = SOCIAL = (
+    ('linkedin', 'https://www.linkedin.com/in/ronaldtheodoro/'),
+    ('github', 'https://github.com/RonaldTheodoro/'),
+)
 
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+THEME = 'themes/Peli-Kiera'
